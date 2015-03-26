@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MovieShelf</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <link rel="stylesheet" href="recursos/MetroUI/css/metro-bootstrap.css">
+    <link rel="stylesheet" href="recursos/MetroUI/css/metro-bootstrap-responsive.css">
+    <link rel="stylesheet" href="recursos/MetroUI/min/iconFont.min.css">
+    <link rel="stylesheet" href="media/css/inicio.css">
+    <script src="media/js/jquery/jquery.min.js"></script>
+    <script src="media/js/jquery/jquery.widget.min.js"></script>
+    <script src="recursos/MetroUI/min/metro.min.js"></script>
+    <script src="recursos/MetroUI/js/metro-rating.js"></script>
+    <script src="recursos/MetroUI/js/metro-datepicker.js"></script>
+    <script src="recursos/MetroUI/js/metro-date-format.js"></script>
+</head>
+<body class="metro">
+
+    <div class="navbar">
+        <div class="navbar-content">
+
+            <a href="index.html" class="element"><span class="icon-grid-view"></span> MOVIESHELF <sup>0.1</sup></a>
+            <span class="element-divider"></span>
+
+            <a class="pull-menu" href="#"></a>
+            <ul class="element-menu" style="display: none;">
+                <li>
+                    <a href="nuevaCinta.html">Agregar</a>
+                    
+                </li>
+            </ul>
+
+            <div class="no-tablet-portrait">
+
+                <div class="element place-right">
+                    <a class="dropdown-toggle" href="#"><span class="icon-cog"></span></a>
+                    <ul class="dropdown-menu place-right" data-role="dropdown">
+                        <li><a href="nuevaCinta.html">Agregar</a></li>
+                    </ul>
+                </div>
+                <span class="element-divider place-right"></span>                        
+            </div>
+        </div>
+    </div>
+    <div id="contenedor_estante">
+        
+    </div>
+    <script src="app/db.js"></script>
+    <script src="app/estante.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>MovieShelf</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+	<link rel="stylesheet" href="recursos/MetroUI/css/metro-bootstrap.css">
+	<link rel="stylesheet" href="recursos/MetroUI/css/metro-bootstrap-responsive.css">
+	<link rel="stylesheet" href="recursos/MetroUI/min/iconFont.min.css">
+	<link rel="stylesheet" href="media/css/inicio.css">
+	<script src="media/js/jquery/jquery.min.js"></script>
+	<script src="media/js/jquery/jquery.widget.min.js"></script>
+	<script src="recursos/MetroUI/min/metro.min.js"></script>
+	<script src="recursos/MetroUI/js/metro-rating.js"></script>
+	<script src="recursos/MetroUI/js/metro-datepicker.js"></script>
+	<script src="recursos/MetroUI/js/metro-date-format.js"></script>
+</head>
+<body class="metro">
+
+	<div class="navbar">
+		<div class="navbar-content">
+
+			<a href="estante.html" class="element"><span class="  icon-arrow-left-3"></span> Regresar</a>
+			<span class="element-divider"></span>
+
+		</div>
+	</div>
+	<div class="container">
+		<form action="javascript:guardarCinta();">
+			<fieldset>
+
+				<legend>Nueva Pelicula</legend>
+
+				<label>Titulo</label>
+				<div class="input-control text" data-role="input-control">
+					<input 
+					type="text" 
+					id="titulo"
+					name="titulo"
+					placeholder="Titulo"
+					autofocus="" required>
+					<button class="btn-clear" tabindex="-1" type="button"></button>
+				</div>
+
+				<label>Fecha</label>
+				<div class="input-control text" data-role="input-control">
+					<input 
+					type="date" 
+					id="fecha" 
+					name="fecha" required>											
+				</div>
+
+				<label >Comentario</label>
+				<div class="input-control textarea">
+					<textarea 
+					id="comentario"
+					name="comentario"
+					placeholder="Inserta tu comentario sobre la pelicula" required></textarea>
+				</div>
+
+				<label>Genero</label>
+				<div class="input-control select" data-role="input-control">
+					<select id="genero" name="genero"  required>					
+						<option value="1">ACCIÓN</option>
+						<option value="2">CIENCIA FICCIÓN</option>
+						<option value="3">COMEDIA</option>
+						<option value="4">DOCUMENTAL</option>
+						<option value="5">DRAMA</option>
+						<option value="6">INFANTIL</option>
+						<option value="7">ROMANCE</option>
+						<option value="8">TERROR</option>
+					</select>
+				</div>
+				<div class="centrar_contenido">
+				<label>Puntos</label>
+					<div id="puntos" class="large fg-yellow centrar_rating" data-puntos="0"></div>
+					<input id="guardaCinta" name="guardaCinta" class="button inverse large" type="submit" value="Guardar">
+				</div>
+			</fieldset>
+		</form>       
+	</div>
+	<script src="app/db.js"></script>
+	<script src="app/nuevaCinta.js"></script>
+</body>
+</html>
